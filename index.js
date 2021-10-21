@@ -42,7 +42,7 @@ async function voting(e) {
 
   const vote = e.target.id;
   const res = await fetch(
-    `https://mystifying-almeida-f767f1.netlify.app/.netlify/functions/hello?vote=${vote}`
+    `https://tender-almeida-b99e4a.netlify.app/.netlify/functions/hello?vote=${vote}`
   );
   const data = await res.json();
   drawChart(data);
